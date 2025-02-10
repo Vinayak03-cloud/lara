@@ -152,7 +152,7 @@ if __name__ == '__main__':
 
                 try:
                     jsonObj = urlopen(
-                        '''http://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=5bad7ddd7071437cbc2ab53a97dd7584''')
+                        '''http://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey="api key"'')
                     data = json.load(jsonObj)
                     i = 1
 
@@ -193,7 +193,7 @@ if __name__ == '__main__':
                 speak('you are currently in' + ' ' + a + ' ' + b)
 
             elif "current weather" in query or "weather" in query:
-                api_key = "f1d85dd9243dda66f4afefab98323879"
+                api_key="api key"
                 base_url = "http://api.openweathermap.org/data/2.5/weather?"
                 res = requests.get('https://ipinfo.io/')
                 data = res.json()
@@ -304,7 +304,7 @@ if __name__ == '__main__':
 
             try:
                 jsonObj = urlopen(
-                    '''http://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=5bad7ddd7071437cbc2ab53a97dd7584''')
+                    '''http://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey="api key"'')
                 data = json.load(jsonObj)
                 i = 1
 
@@ -432,7 +432,7 @@ if __name__ == '__main__':
             speak("that's so sweet")
 
         elif "which is" in query:
-            client = wolframalpha.Client("E9QJTG-3R93TJ33H3")
+            client = wolframalpha.Client("api key")
             res = client.query(query)
 
             try:
