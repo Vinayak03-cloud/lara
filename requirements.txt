@@ -1,0 +1,10 @@
+wolframalpha
+pyttsx3
+pywhatkit
+speechrecognition
+pydictionary
+wikipedia
+speedtest-cli
+randfacts
+pyjokes
+requests
